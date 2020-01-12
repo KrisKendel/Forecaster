@@ -1,6 +1,7 @@
 body {
   font-size: 16pt;
   line-height: 24pt;
+  font-family: "Roboto";
 }
 .logo {
   margin: 40px;
@@ -13,7 +14,6 @@ body {
   font-weight: bold;
   font-size: 1.5em;
   line-height: 0.1em;
-  font-family: "Roboto";
   text-align: center;
 }
 
@@ -26,7 +26,7 @@ body {
 .search {
   margin: auto;
   margin-top: 40px;
-  width: 60%;
+  width: 65%;
   height: 240px;
   border-top: 5px solid #0d0d0d;
   border-bottom: 5px solid #0d0d0d;
@@ -38,7 +38,6 @@ body {
   font-style: italic;
   font-weight: 200;
   color: #0d0d0d;
-  font-family: "Roboto";
   font-size: 1.1em;
   margin-top: 55px;
   margin-bottom: 0px;
@@ -65,8 +64,8 @@ button {
   font-weight: bold;
   margin: 20px;
 }
-.whatcity {
-  width: 60%;
+.choose-city {
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
@@ -82,27 +81,29 @@ button {
 #city {
   color: #ff5000;
 }
-#cityname {
+#city-name {
   color: #0d0d0d;
   margin-left: 15px;
 }
 
 .grid-container {
-  width: 60%;
+  width: 65%;
   display: flex;
   margin: auto;
+  justify-content: center;
 }
 .card {
   width: 130px;
   height: 184px;
   background-color: #dddddd;
-  margin-left: 20px;
   text-align: center;
+}
+.card + .card {
+  margin-left: 17px;
 }
 .day {
   margin-top: 10px;
   margin-bottom: 0px;
-  font-family: "Roboto";
   font-weight: bold;
   line-height: 1;
   color: #0d0d0d;
@@ -115,9 +116,7 @@ button {
 }
 .temp {
   margin-top: 0px;
-  padding-top: 0px;
   margin-bottom: 5px;
-  font-family: "Roboto";
   font-size: 2.75em;
   line-height: 1.25;
   font-weight: bold;
@@ -126,7 +125,6 @@ button {
 .mintemp {
   margin-top: 5px;
   margin-left: 10px;
-  font-family: "Roboto";
   font-weight: normal;
   float: left;
 }
@@ -135,6 +133,46 @@ button {
   margin-right: 10px;
   font-weight: normal;
   float: right;
-  font-family: "Roboto";
   font-size: 1em;
+}
+
+@media (min-width: 319px) and (max-width: 659px) {
+  .grid-container {
+    display: block;
+  }
+  .textinput {
+    height: 32px;
+    width: 200px;
+  }
+  #inputquest {
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 0.7em;
+  }
+  .card {
+    margin: auto;
+  }
+  .card + .card {
+    margin: auto;
+  }
+  .search {
+    width: 80%;
+  }
+  .choose-city {
+    justify-content: center;
+  }
+}
+@media (min-width: 660px) and (max-width: 1500px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+  }
+  .card {
+    margin: auto;
+  }
+  .card + .card {
+    margin: auto;
+  }
 }

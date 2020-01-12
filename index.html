@@ -18,24 +18,24 @@
     />
   </head>
   <body>
-    <section class="logo">
+    <div class="logo">
       <img src="assets/logo.png" alt="logo" id="logo" />
       <h1 class="heading">FORECASTER</h1>
-    </section>
-    <section class="search">
+    </div>
+    <div class="search">
       <p id="inputquest">Enter a name of the Croatian city</p>
       <form>
-        <input class="textinput" type="text" name="grad" /><br />
-        <button type="button">SEARCH</button>
+        <input class="textinput" type="text" name="city-input" /><br />
+        <button type="button" id="button">SEARCH</button>
       </form>
-    </section>
-    <section class="forecast">
-      <div class="whatcity">
+    </div>
+    <div class="forecast">
+      <section class="choose-city">
         <span id="city"><p>City:</p></span>
-        <span id="cityname"><p>Zagreb</p</span>
-      </div>
-      <div class="grid-container">
-        <div class="item1 card">
+        <span id="city-name"><p>Zagreb</p</span>
+      </section>
+      <section class="grid-container">
+        <div class="day1 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -52,7 +52,7 @@
             <p class="maxtemp">29</p>
           </div>
         </div>
-        <div class="item2 card">
+        <div class="day2 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -69,7 +69,7 @@
             <p class="maxtemp">29</p>
           </div>
         </div>
-        <div class="item3 card">
+        <div class="day3 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -86,7 +86,7 @@
             <p class="maxtemp">29</p>
           </div>
         </div>  
-        <div class="item4 card">
+        <div class="day4 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -103,7 +103,7 @@
             <p class="maxtemp">29</p>
           </div>
         </div>
-        <div class="item5 card">
+        <div class="day5 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -120,7 +120,7 @@
             <p class="maxtemp">29</p>
           </div>
         </div>
-        <div class="item6 card">
+        <div class="day6 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -137,7 +137,7 @@
             <p class="maxtemp">29</p>
           </div>
         </div>
-        <div class="item7 card">
+        <div class="day7 card">
           <div>
             <p class="day">Monday</p>
           </div>
@@ -154,8 +154,8 @@
             <p class="maxtemp">29</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
