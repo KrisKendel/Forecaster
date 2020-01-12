@@ -8,7 +8,7 @@ body {
   display: grid;
 }
 
-.naslov {
+.heading {
   font-style: normal;
   font-weight: bold;
   font-size: 1.5em;
@@ -23,15 +23,17 @@ body {
   margin: auto;
 }
 
-.trazilica {
+.search {
   margin: auto;
   margin-top: 40px;
   width: 60%;
   height: 240px;
   border-top: 5px solid #0d0d0d;
   border-bottom: 5px solid #0d0d0d;
+  text-align: center;
+  justify-content: center;
 }
-#unos {
+#inputquest {
   text-align: center;
   font-style: italic;
   font-weight: 200;
@@ -41,10 +43,6 @@ body {
   margin-top: 55px;
   margin-bottom: 0px;
   height: 30px;
-}
-.trazilica {
-  text-align: center;
-  justify-content: center;
 }
 .textinput {
   height: 32px;
@@ -67,7 +65,7 @@ button {
   font-weight: bold;
   margin: 20px;
 }
-.grad {
+.whatcity {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -77,14 +75,14 @@ button {
   font-family: sans-serif;
   font-size: 2em;
 }
-.prognoza {
+.forecast {
   margin-top: 5px;
 }
 
-#grad {
+#city {
   color: #ff5000;
 }
-#imegrada {
+#cityname {
   color: #0d0d0d;
   margin-left: 15px;
 }
@@ -101,7 +99,7 @@ button {
   margin-left: 20px;
   text-align: center;
 }
-.dan {
+.day {
   margin-top: 10px;
   margin-bottom: 0px;
   font-family: "Roboto";
@@ -109,7 +107,7 @@ button {
   line-height: 1;
   color: #0d0d0d;
 }
-.datum {
+.date {
   margin-top: 1px;
   font-family: "Roboto-Condensed";
   font-size: 0.9em;
