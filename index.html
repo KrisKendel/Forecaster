@@ -1,22 +1,28 @@
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet" />
-<title>Forecaster</title>
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet" />
+  <title>Forecaster</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
 </head>
+
 <header>
   <div class="logo">
     <img src="assets/logo.png" alt="logo" id="logo" />
     <h1 class="heading">FORECASTER</h1>
   </div>
 </header>
+
 <body>
   <div class="search">
     <p id="inputquest">Enter a name of the Croatian city</p>
     <form>
-      <input class="textinput" type="text" value="" id="text" /><br />
+      <input class="textinput" type="text" value="" id="text" autofocus /><br />
       <button type="button" id="button">SEARCH</button>
     </form>
   </div>
@@ -26,10 +32,12 @@
         <p>City:</p>
       </span>
       <span id="city-name">
-        <p id="name-city">Enter a city name and press the button to retrieve 7 day weather forecast</p>
+        <p id="name-city">
+          Press the button to retrieve 7 day weather forecast
+        </p>
       </span>
     </section>
-    <section class="grid-container">
+    <section class="grid-container" id="container">
       <div class="day1 card">
         <div>
           <p class="day" id="day0">Day</p>
@@ -152,6 +160,7 @@
     </section>
   </div>
 </body>
+
 <script src="index.js"></script>
 
 </html>
